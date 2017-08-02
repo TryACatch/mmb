@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>比价搜索</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/category.css">
+</head>
+<body>
+					<!-- 头部 -->
+	<header>
+		<div class="haeder-top clearfix">
+			<div class="header_left fl">
+				<a href="../index.html">
+					<img src="../images/header_logo.png" alt="">
+				</a>
+			</div>
+			<div class="header_right fr">
+				<img src="../images/header_app.png" alt="">
+			</div>
+		</div>
+	</header>
+				<!-- 搜索 -->
+	<div class="top-search">
+		<input type="text" placeholder="请输入你想比价的商品" class="ipt-1 fl">
+		<input type="button" value="搜索" class="ipt-2 fr">
+	</div>
+
+				<!-- 商品分类 -->
+	<div class="big-menu">
+		<script type="text/template" id='main'>
+			{{each result as value i}}
+			<div class="menu">
+				<div class="menu-top">
+					<p>
+					<span class="fl">{{result[i].title}}</span>
+					<span class="btn-toggle fr" titleid="{{result[i].titleId}}">^</span>
+					</p>
+				</div>
+				<div class="menu-bottom hide">
+					<ul class="clearfix">
+						
+					</ul>
+				</div>
+			</div>
+			{{/each}}
+		</script>
+		
+	</div>
+
+				<!-- 底部 -->
+	<div class="footer">
+		<div class="login">
+			<a href="">登陆</a>
+			<a href="" class='middle'>注册</a>
+			<a href="javascript:;" id="logina">返回顶部</a>
+		</div>
+		<p class="first-p">
+			<span>手机APP下载</span>慢慢买手机版--<em>掌上比价平台</em>		
+		</p>
+		<p>m.manmanbuy.com</p>
+	</div>
+</body>
+
+
+
+<script type="text/template" id="list">
+			{{each result as value i}}
+				<li>
+					<a href="productlist.html?categoryid={{result[i].categoryId}}">{{result[i].category}}</a>
+				</li>
+			{{/each}}
+		</script>
+<script src='../js/rem.js'></script>
+<script src="../art/template.js"></script>
+<script src="../API/jquery-1.12.0.js"></script>
+<script src="../API/JLRoute.js"></script>
+<script src="../js/category.js"></script>
+<script src="../js/MLTools.js"></script>
+</html>

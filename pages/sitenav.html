@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商城导航</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/sitenav.css">
+</head>
+<body>
+				<!-- 头部 -->
+	<header>
+		<div class="haeder-top clearfix">
+			<a href="../index.html" class="fl cona"></a>
+			<div class="header_right fr">
+				<img src="../images/header_app.png" alt="">
+			</div>
+			<h2>商城导航</h2>
+		</div>
+	</header>
+			
+
+
+				<!-- 商城标签 -->
+	<div class="site clearfix" >
+	<script type="text/template" id="site">
+	{{each result as value i}}
+		<a href="{{result[i].navHref}}">
+			<div class="sitelogo clearfix fl">
+				<img src="{{result[i].navImg}}" alt="" class="fl center-y">
+				<p class="fr">{{result[i].navTitle}}</p>
+			</div>
+		</a>
+	{{/each}}
+	</script>
+	</div>
+
+
+
+
+				<!-- 底部 -->
+	<div class="footer">
+		<div class="login">
+			<a href="">登陆</a>
+			<a href="" class='middle'>注册</a>
+			<a href="javascript:;" id="logina">返回顶部</a>
+		</div>
+		<p class="first-p">
+			<span>手机APP下载</span>慢慢买手机版--<em>掌上比价平台</em>		
+		</p>
+		<p>m.manmanbuy.com</p>
+	</div>	
+</body>
+<script src='../js/rem.js'></script>
+<script src="../art/template.js"></script>
+<script src="../API/jquery-1.12.0.js"></script>
+<script src="../API/JLRoute.js"></script>
+<script src="../js/MLTools.js"></script>
+<script src="../js/sitenav.js"></script>
+</html>

@@ -1,0 +1,27 @@
+.haeder-top h2{
+	text-align: center;
+	line-height: 1.25rem;
+	color: #fff;
+	font-size: 1rem;
+}
+
+.allPro .product{
+	box-sizing: border-box;
+	padding: 1.0rem;
+	width: 50%;
+	height: 13.0rem;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+
+}
+.allPro .product img{
+	width: 7.0rem;
+}
+.allPro .product h2{
+	color: #000;
+	font-size: 0.7rem;
+}
+.allPro .product  p{
+	font-size: 0.6rem;
+	color:  #ff841d;
+}

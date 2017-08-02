@@ -1,0 +1,53 @@
+
+.menu .product{
+	height: 6.0rem;
+	box-sizing: border-box;
+	padding: 0.75rem 0.625rem;
+	border-bottom: 1px solid #c9c9c9;
+
+}
+.menu .product img{
+	width: 5.0rem;
+	height:4.5rem ;
+	float: left;
+}
+.menu .product .introduce{
+	width: 11.75rem;
+	height: 100%;
+}
+.menu .product .introduce p{
+	font-size: 0.7rem;
+
+}
+.menu .product .introduce p:nth-child(1){
+	font-weight: 700;
+}
+.menu .product .introduce p:nth-child(2){
+	font-weight: 700;
+	color: red;
+}
+
+
+.pagenum{
+	height: 2.5rem;
+	box-sizing: border-box;
+	padding: 0.5rem	 1.0rem;
+}
+.pagenum input{
+	width: 4.0rem;
+	height: 100%;
+	border: 1px solid #eee;
+	border-radius: 10px;
+}
+.pagenum .prev{
+	margin-right:2.25rem; 
+}
+.pagenum .next{
+	margin-left:2.25rem; 
+}
+.pagenum select{
+	width: 3.75rem;
+	height: 100%;
+	border: 1px solid #eee;
+	border-radius: 10px;
+}

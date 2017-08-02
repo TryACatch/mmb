@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>慢慢买首页</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+	
+</head>
+<body>
+
+				<!-- 头部 -->
+	<header>
+		<div class="haeder-top clearfix">
+			<div class="header_left fl">
+				<img src="images/header_logo.png" alt="">
+			</div>
+			<div class="header_right fr">
+				<img src="images/header_app.png" alt="">
+			</div>
+		</div>
+	</header>
+				<!-- 搜索 -->
+	<div class="top-search">
+		<input type="text" placeholder="请输入你想比价的商品" class="ipt-1 fl">
+		<input type="button" value="搜索" class="ipt-2 fr">
+	</div>
+				<!-- 分类 -->
+	<div class="main-menu clearfix">
+		<script type="text/template" id="menu">
+		{{each result as value i}}
+			<a href="pages/{{result[i].titlehref}}">
+				<div class="shangp fl">
+					{{#result[i].img}}
+					<p>{{result[i].name}}</p>
+				</div>
+			</a>
+		{{/each}}
+		</script>
+		
+		
+	</div>
+				<!-- 推荐 -->
+	<div class="introduce clearfix">
+		<span>超值折扣推荐</span>
+		<a href="pages/inlanddiscount.html">		
+			<img src="pages/images/icons/more.png" alt="" class="fr">
+		</a>
+
+	</div>
+				<!-- 具体商品 -->
+	<div class="sale">
+		<script type="text/template" id="list">
+			{{each result as value i}}
+			<div class="sale_show clearfix">
+				<a href="pages/moneyproduct.html?productid={{result[i].productId}}">
+					{{#result[i].productImg2}}
+					<div class="message fr clearfix">
+						<p class="txt_cut_2 first">{{result[i].productName}}
+						<span>{{result[i].productPinkage}}</span>
+						</p>
+						<p class='second'>
+							<span>天猫旗舰店|{{result[i].productTime}}</span>
+							<span class="fr">{{result[i].productComCount}}</span>
+						</p>
+					</div>
+				</a>
+			</div>
+			{{/each}}
+		</script>
+		
+	</div>
+
+				<!-- 获取更多 -->
+	<div class="getMore">
+		<a href="pages/moneyctrl.html">
+			<input type="button" value="更多优惠信息》">
+		</a>
+	</div>
+
+				<!-- 排行 -->
+	<div class="introduce clearfix">
+		<span>品牌排行</span>
+		<a href="pages/brandTitle.html">
+			<img src="pages/images/icons/more.png" alt="" class="fr">
+		</a>
+	</div>
+
+				<!-- 底部 -->
+
+	<div class="footer">
+		<div class="login">
+			<a href="">登陆</a>
+			<a href="" class='middle'>注册</a>
+			<a href="javascript:;" id="logina">返回顶部</a>
+		</div>
+		<p class="first-p">
+			<span>手机APP下载</span>慢慢买手机版--<em>掌上比价平台</em>		
+		</p>
+		<p>m.manmanbuy.com</p>
+	</div>
+</body>
+<script src='js/rem.js'></script>
+<script src="art/template.js"></script>
+<script src="API/jquery-1.12.0.js"></script>
+<script src="API/JLRoute.js"></script>
+<script src="js/index.js"></script>
+</html>

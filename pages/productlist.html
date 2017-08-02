@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>productlist</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/productlist.css">
+</head>
+<body>
+				<!-- 头部 -->
+	<header>
+		<div class="haeder-top clearfix">
+			<div class="header_left fl">
+				<a href="category.html">
+					<img src="../images/header_logo.png" alt="">
+				</a>
+			</div>
+			<div class="header_right fr">
+				<img src="../images/header_app.png" alt="">
+			</div>
+		</div>
+	</header>
+				<!-- 搜索 -->
+	<div class="top-search">
+		<input type="text" placeholder="请输入你想比价的商品" class="ipt-1 fl">
+		<input type="button" value="搜索" class="ipt-2 fr">
+	</div>
+
+
+				<!-- 筛选 -->
+	<div class="filter">
+		<p class="fl">
+			<a href="">首页&gt;</a>
+			<a href="">全部分类&gt;</a>
+			<a href="" class="cateName">
+				
+			</a>
+		</p>
+		<input type="button" value="搜索" class="fr">
+	</div>
+
+
+				<!-- 商品列表 -->
+	<div class="menu">
+	<script type="text/template" id="list">
+		{{each result as value i}}
+		<div class="product">
+			<a href="bijia.html?productid={{#result[i].productId}}&productCom={{result[i].productCom}}&productPrice={{result[i].productPrice}}&categoryid={{result[i].categoryId}}">
+				{{#result[i].productImg}}
+				<div class="introduce fr">
+					<p class="txt_cut_2">
+						{{result[i].productName}}
+					</p>
+					<p>{{result[i].productPrice}}</p>
+					<p>
+					 	<span>{{result[i].productQuote}}</span>
+						<span>{{result[i].productCom}}</span>
+					</p>
+				</div>
+			</a>	
+		</div>
+		{{/each}}
+	</script>
+		
+	</div>
+
+
+				<!-- 页码 -->
+
+	<div class="pagenum">
+		<input type="button" value="上一页" class="prev">
+		<select name="page" id="pageNum">
+			
+		</select>
+		<input type="button" value="下一页" class="next">
+	</div>
+
+
+				<!-- 底部 -->
+	<div class="footer">
+		<div class="login">
+			<a href="">登陆</a>
+			<a href="" class='middle'>注册</a>
+			<a href="javascript:;" id="logina">返回顶部</a>
+		</div>
+		<p class="first-p">
+			<span>手机APP下载</span>慢慢买手机版--<em>掌上比价平台</em>		
+		</p>
+		<p>m.manmanbuy.com</p>
+	</div>
+</body>
+<script type="text/template" id="name">
+	{{result[0].category}}
+</script>
+
+<script src='../js/rem.js'></script>
+<script src="../art/template.js"></script>
+<script src="../API/jquery-1.12.0.js"></script>
+<script src="../API/JLRoute.js"></script>
+<script src="../js/MLTools.js"></script>
+<script src="../js/productlist.js"></script>
+
+
+</html>

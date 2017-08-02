@@ -1,0 +1,31 @@
+header{
+	background-color: #f4483e;
+}
+.haeder-top h2{
+	text-align: center;
+	line-height: 1.25rem;
+	color: #fff;
+	font-size: 1rem;
+}
+.coupon{
+	padding:0.75rem 0.25rem;
+
+}
+.coupon .discount{
+	width: 5.825rem;
+	// height: 3.75rem;
+	box-sizing: border-box;
+	padding: 0.25rem 1.5rem;
+	float: left;
+	border:1px solid #000;
+	margin-right: 0.25rem;
+	margin-bottom: 0.25rem;
+}
+.coupon .discount img{
+	width: 100%;
+}
+.coupon .discount p{
+	font-size: 0.6rem;
+	text-align: center;
+	// margin
+}

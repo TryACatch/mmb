@@ -1,0 +1,35 @@
+.big-menu{
+	border-top: 1px solid #c7c7c7;
+	border-bottom: 1px solid #c7c7c7;
+	border-radius: 0.125rem;
+
+}
+.big-menu .menu{
+
+}
+.big-menu .menu .menu-top{
+	height: 2.0rem;
+	box-sizing: border-box;
+	padding: 0.5rem 0.75rem;
+	background-color: #ededed;
+	border-bottom: 1px solid #cbcbcb;
+}
+.big-menu .menu .menu-top p{
+	font-weight: 700;
+	font-size: 0.7rem;
+}
+.big-menu .menu .menu-bottom ul li{
+	width: 33%;
+	height: 2.0rem;
+	text-align: center;
+	line-height: 2.0rem;
+	float: left;
+	border-bottom: 1px solid #cbcbcb;
+	border-right: 1px solid #cbcbcb;
+}
+
+.big-menu .menu .menu-bottom ul li a{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+}

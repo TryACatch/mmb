@@ -1,0 +1,25 @@
+.title{
+	height: 2.0rem;
+	border: 1px solid #ccc;
+	width: 18.25rem;
+	background-color: #eee;
+	margin: 0.5rem auto;
+	line-height: 2.0rem;
+	font-size: 0.7rem;
+	text-indent: 1rem;
+	color: #daa520;
+}
+.rank{
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-radius: 0.25rem;
+}
+.rank .comment{
+	height: 2.0rem;
+	background-color: #eee;
+	border-bottom: 1px solid #ccc;
+	line-height: 2.0rem;
+	font-size: 0.7rem;
+	font-weight: 700;
+	text-indent: 1.5rem;
+}

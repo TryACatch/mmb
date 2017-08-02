@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>优惠券分页</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/couponproduct.css">
+</head>
+<body>
+<body>
+						<!-- 头部 -->
+	<header>
+		<div class="haeder-top clearfix">
+			<a href="coupon.html" class="fl cona"></a>
+			<div class="header_right fr">
+				<img src="../images/header_app.png" alt="">
+			</div>
+			<h2>肯德基优惠券</h2>
+		</div>
+	</header>
+						
+						<!-- 提示 -->
+	<div class="tips">
+		<p>点餐前出示手机中的优惠券，即可享受优惠...</p>
+	</div>
+
+						<!-- 商品部分 -->
+	<div class="countproduct">
+	<script type="text/template" id="countproduct">
+		
+	
+	{{each result as value i}}
+		<div class="product clearfix" id="{{i}}">
+			
+				<div class="productimg fl">
+					{{#result[i].couponProductImg}}
+				</div>
+				<div class="comment fr">
+					<p>{{result[i].couponProductName}}</p>
+					<p>{{result[i].couponProductPrice}}</p>
+					<p>{{result[i].couponProductTime}}</p>
+				</div>
+			
+		</div>
+	{{/each}}
+
+
+	</script>
+	</div>
+
+
+							<!-- 遮罩层 -->
+	<div class="mask hide">
+		<div class="pause">X</div>
+		<div class="mask-main center-self-xy">
+			<div class="mask-btn center-self-xy">
+				<div class="btn-left fl">&lt;</div>
+				<div class="btn-right fr">&gt;</div>
+			</div>
+			<div class="mask-img center-self-xy">
+				<div class="maskI">
+					<img src="" alt="">
+				</div>
+				
+
+				<p class="maskP one_txt_cut ">aaa</p>
+			</div>
+		</div>
+	</div>
+
+
+							<!-- 底部 -->
+	<div class="footer">
+		<div class="login">
+			<a href="">登陆</a>
+			<a href="" class='middle'>注册</a>
+			<a href="javascript:;" id="logina">返回顶部</a>
+		</div>
+		<p class="first-p">
+			<span>手机APP下载</span>慢慢买手机版--<em>掌上比价平台</em>		
+		</p>
+		<p>m.manmanbuy.com</p>
+	</div>
+</body>
+<script src='../js/rem.js'></script>
+<script src="../art/template.js"></script>
+<script src="../API/jquery-1.12.0.js"></script>
+<script src="../API/JLRoute.js"></script>
+<script src="../js/MLTools.js"></script>
+<script src="../js/couponproduct.js"></script>
+</html>

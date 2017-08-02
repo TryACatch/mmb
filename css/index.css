@@ -1,0 +1,167 @@
+header{
+	background-color: #ff841d;
+	height: 2.5rem;
+	border:1px solid transparent;
+}
+header .haeder-top{
+	height: 1.25rem;
+	margin-top: 0.6rem;
+}
+header .header_left{
+	height:100%;
+	margin-left:0.75rem;
+
+}
+header .header_left img{
+	width: 9rem;
+}
+header .header_right{
+	height:100%;
+	margin-right: 0.3rem;
+
+}
+header .header_right img{
+	width: 1.7rem;
+}
+
+
+.top-search{
+	height: 2.5rem;
+	box-sizing: border-box;
+	padding: 0.5rem;
+}
+.top-search input{
+	height: 100%;
+}
+.top-search .ipt-1{
+	background-color: #f1f1f1;
+	width: 14.25rem;
+	border-radius: 1.5rem;
+	text-indent: 1rem;
+}
+.top-search .ipt-2{
+	background-color: #ff841d;
+	width: 3rem;
+	text-align: center;
+	color: #000;
+	border-radius: 1.5rem;
+}
+
+
+.main-menu{
+	border-top: 0.5rem solid #f1f1f1;
+	border-bottom: 0.25rem solid #f1f1f1;
+}
+.main-menu .shangp{
+	width: 25%;
+	height: 4.75rem;
+	text-align: center;
+}
+.main-menu .shangp img{
+	width: 2.5rem;
+	margin: 1.1rem auto 0.5rem;
+}
+.main-menu .shangp p{
+	font-weight: 700;
+}
+
+
+.introduce{
+	height: 1.75rem;
+	box-sizing: border-box;
+	padding: 0.375rem;
+	background-color: #ff9e23;
+}
+.introduce span{
+	color:#fff;
+	font-size: 0.7rem;
+}
+.introduce img{
+	height: 1rem;
+	width:1rem;
+}
+
+
+.sale_show{
+	height: 6.375rem;
+	border-bottom:1px solid #f1f1f1;
+	box-sizing: border-box;;
+	padding: 0.75rem 0.375rem;
+
+}
+.sale_show img{
+	width: 5rem;
+	float: left;
+}
+.sale_show .message{
+	width:12.5rem;
+}
+.sale_show .message p{
+	width: 100%;
+}
+.sale_show .message .first{
+	font-size: 0.6rem;
+	font-weight: 700;
+}
+.sale_show .message .first span{
+	color:  #ff841d;
+
+}
+.sale_show .message .second{
+	margin-top: 1.5rem;
+}
+
+
+.getMore{
+	height: 2.5rem;
+	box-sizing: border-box;
+	padding: 0.5rem;
+	border-bottom: 1px solid #f1f1f1;
+
+}
+.getMore input{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-weight: 700;
+	border-radius: 0.125rem;
+}
+
+
+.footer{
+	padding: 1.25rem 0;
+	background-color: #f1f1f1;
+	text-align: center;
+}
+.footer .login{
+	height: 1.6rem;
+	border-top:1px solid #c9c9c9;
+	border-bottom:1px solid #c9c9c9;
+	// background-color: red;
+}
+.footer .login a{
+	display: inline-block;
+	height: 100%;
+	width: 32%;
+	// text-align: center;
+	font-size: 0.7rem;
+	line-height: 1.6rem;
+	color: #000;
+	font-weight: 700;
+}
+.footer .login .middle{
+	border-right: 1px solid #c9c9c9;
+	border-left: 1px solid  #c9c9c9;
+
+}
+.footer .first-p{
+	margin-top: 0.5rem;
+	font-size: 0.7rem;
+	font-weight: 700;
+}
+.footer .first-p span{
+	color: #ff841d;
+}
+.footer .first-p em{
+	font-weight: 400;
+}

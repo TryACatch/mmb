@@ -1,0 +1,101 @@
+.comment{
+	height: 2.0rem;
+	background-color: #eee;
+	border-bottom: 1px solid #ccc;
+	line-height: 2.0rem;
+	font-size: 0.7rem;
+	font-weight: 700;
+	text-indent: 1.5rem;
+	color: #daa520;
+}
+.producer-module{
+	border-top: 1px solid transparent;
+}
+.producer-module .producer:nth-child(1) .num{
+	background-color: red;
+}
+.producer-module .producer:nth-child(2) .num{
+	background-color: #daa520;
+}
+.producer-module .producer:nth-child(3) .num{
+	background-color: green;
+}
+.rank .producer {
+	height: 3.25rem;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+	// text-indent: 2rem;
+}
+.rank .producer .strike{
+	font-weight: 700;
+}
+.rank .producer p{
+	text-indent: 2rem;
+	font-size: 0.7rem;
+	margin-top: 0.5rem;
+}
+.rank .producer .num{
+	
+	width: 1.0rem;
+	height: 1.0rem;
+	line-height: 1rem;
+	text-align: center;
+	background-color: #c9c9c9;
+	color: #fff;
+	font-size: 0.6rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+}
+
+.menu .product,
+.product-one .product{
+	height: 6.0rem;
+	box-sizing: border-box;
+	padding: 0.75rem 0.625rem;
+	border-bottom: 1px solid #c9c9c9;
+
+}
+.menu .product img,
+.product-one .product img{
+	width: 5.0rem;
+	height:4.5rem ;
+	float: left;
+}
+.menu .product .introduce,
+.product-one .product .introduce{
+	width: 11.75rem;
+	height: 100%;
+}
+.menu .product .introduce p,
+.product-one .product .introduce p,{
+	font-size: 0.7rem;
+}
+
+
+.menu .product .introduce p:nth-child(1),
+.product-one .product .introduce p:nth-child(1){
+	font-weight: 700;
+}
+
+.menu .product .introduce p:nth-child(2),
+.product-one .product .introduce p:nth-child(2){
+	font-weight: 700;
+	color: red;
+}
+// .product-one .product .introduce p:nth-child(2),
+// .product-one .product .introduce p:nth-child(2){
+// 	font-weight: 700;
+// 	color: red;
+// }
+
+.main-content{
+	padding: 0.75rem 0.5rem;
+	font-size: 0.6rem;
+	border-bottom: 1px solid #000;
+}
+.main-content p:nth-child(2){
+	text-align: right;
+
+}
